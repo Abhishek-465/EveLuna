@@ -90,10 +90,6 @@ async function fetchCycleData() {
             document.getElementById("phase").innerText = `Phase: ${phase}`;
             document.getElementById("symptoms").innerText = `Symptoms: ${symptoms}`;
 
-            // ✅ Update Progress Bar
-            const progressBar = document.getElementById("progress-bar");
-            const progress = (cycleDay / cycleLength) * 314;
-            progressBar.style.strokeDashoffset = 314 - progress;
         }
     }
 }
