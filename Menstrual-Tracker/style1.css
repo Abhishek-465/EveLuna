@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+footer {
+    /* Pink to Mauve gradient */
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-top: auto;
+    width: 100%;
+
+}
+
+/* 🌸 Signature Styling */
+.signature {
+    font-family: 'Great Vibes', cursive; /* Handwritten effect */
+    font-size: 22px;
+    margin-top: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffd1dc; /* Soft pastel pink */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* 🔥 Authentication Page Styling */
+.auth-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    padding-top: 50px;
+}
+.image{
+    width: 250px;
+    height: 250px;
+}
+.heading{
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+}
+
+.card h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 🔥 Buttons */
+.btn {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e03e5c;
+}
+
+/* 🔥 Home Page */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff4d6d;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+.home-container {
+    text-align: center;
+    padding: 40px;
+}
+
+#user-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 10px;
+}

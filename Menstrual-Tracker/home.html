@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menstrual Cycle Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="script.js"></script>
+</head>
+<body>
+
+    <!-- 🔥 Header with Hamburger Icon -->
+    <header>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <h1>EveLuna</h1>
+    </header>
+
+    <!-- 🔥 Hamburger Menu -->
+    <nav id="sidebar">
+        <div class="close-btn" id="close-btn">&times;</div>
+        <h2>Update Cycle Info</h2>
+        <form id="update-form">
+            <label for="cycle-length">Cycle Length (days):</label>
+<input type="number" id="cycle-length" min="21" max="35" step="1" required>
+
+<label for="period-duration">Period Duration (days):</label>
+<input type="number" id="period-duration" min="1" max="10" step="1" required>
+
+
+            <button type="submit">Update</button>
+        </form>
+    </nav>
+
+    <!-- 🔥 Main Content -->
+    <main>
+        <h1 id="userName"></h1>
+        <h2>Track the Cycle</h2>
+         <!-- 🔥 Progress Circle UI -->
+         <div class="progress-container">
+            <svg width="300" height="300">
+                <circle cx="160" cy="150" r="120" stroke="#ddd" stroke-width="10" fill="none"/>
+                <circle id="progress-bar" cx="60" cy="60" r="50" stroke="#ff4d6d" stroke-width="10" fill="none"
+                    stroke-dasharray="314" stroke-dashoffset="314"/>
+            </svg>
+            <div class="progress-text">
+                <p id="days-left">Loading...</p>
+                <p id="phase">Phase: --</p>
+                <p id="symptoms">Symptoms: --</p>
+            </div>
+        </div>
+        <p id="next-period"></p>
+        <button id="log-period">Log Period Start</button>
+    </main>
+
+</body>
+</html>
