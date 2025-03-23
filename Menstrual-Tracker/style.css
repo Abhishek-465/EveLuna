@@ -120,15 +120,15 @@ main {
 }
 
 #next-period {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     margin: 15px auto;
     color: #d7d7d7;
     background-color: #e91e63;
     text-align: center;
     height: 45px;
-    width: 200px;
-    padding-top: 2px;
+    width: 260px;
+    padding: 12px 6px;
     border-radius: 30px;
 }
 #next-period:hover{
@@ -153,11 +153,7 @@ main {
 }
 
 /* 🔥 Progress Circle */
-#progress-bar {
-    transition: stroke-dashoffset 1s ease-in-out;
-    stroke-linecap: round;
-    background-color: #e91e63;
-}
+
 
 
 /* 🔥 Progress Text */
