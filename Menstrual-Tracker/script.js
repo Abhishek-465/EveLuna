@@ -59,9 +59,12 @@ async function fetchCycleData() {
         
         if (cycleLength && lastPeriod) {
             const lastPeriodDate = lastPeriod.toDate ? lastPeriod.toDate() : new Date(lastPeriod);
+            lastPeriodDate.setHours(0, 0, 0, 0);
             const today = new Date();
+            today.setHours(0, 0, 0, 0);
             const nextPeriod = new Date(lastPeriodDate);
             nextPeriod.setDate(nextPeriod.getDate() + cycleLength);
+            nextPeriod.setHours(0, 0, 0, 0);
             nextPeriodText.innerText = `Next Period Date: ${nextPeriod.toISOString().split('T')[0]}`;
 
             // ✅ Calculate Days Left
@@ -93,6 +96,7 @@ async function fetchCycleData() {
         }
     }
 }
+
 
 
 // 🔥 Update Cycle Data
